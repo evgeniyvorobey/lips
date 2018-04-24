@@ -1,0 +1,37 @@
+
+body{
+  background: #ffeff1;
+}
+/*-----HEADER-----*/
+header{
+  position: relative;
+}
+.navigation{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background:rgba(255, 255, 255, 0.85);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 20px -10px #000000;
+}
+a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.header-section{
+  display: flex;
+  align-items: center;
+}
+.header-item{
+  height: 20px;
+  padding: 10px 7px;
+  font-size: 14px;
+  margin-left: 5px;
+  border-bottom: solid 2px transparent;
+  transition: .4s ease-in-out;
+}
+.header-item:hover{
+  border-bottom: solid 2px rgb(160, 160, 160);  
+}
