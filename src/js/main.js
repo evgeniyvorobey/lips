@@ -1,3 +1,4 @@
+// ------------PARALLAX------------
 jQuery(document).ready(function(){
     $(window).scroll(function(e){
         parallaxScroll();
