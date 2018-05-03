@@ -75,12 +75,12 @@ a {
 	box-sizing: border-box;
 	position: absolute;
 	top: 242px;
-	-webkit-box-shadow: 0px 4px 20px -10px #000000;
-	box-shadow: 0px 4px 20px -10px #000000;
 }
 
 .about {
 	background: #fff;
+	-webkit-box-shadow: 0px 4px 20px -10px #000000;
+	box-shadow: 0px 4px 20px -10px #000000;
 }
 
 .about h3 {
@@ -143,6 +143,8 @@ a {
 .about-lips,
 .about-botox {
 	background: rgba(255, 255, 255, 0.664);
+	-webkit-box-shadow: 0px 4px 20px -10px #000000;
+	box-shadow: 0px 4px 20px -10px #000000;
 }
 
 .footer {
@@ -378,6 +380,11 @@ header,
 	width: 50%;
 }
 
+.about-lips,
+.about-botox {
+	height: 310px;
+}
+
 .wrapper-content h4 {
 	padding: 0 20px;
 }
@@ -429,9 +436,18 @@ header,
 	top: 442px;
 }
 
+.about-lips,
+.about-botox {
+	height: 280px;
+}
+
 }
 
 @media (min-width: 1024px) {
+
+body {
+	width: 1024px;
+}
 
 header,
 .navigation {
@@ -439,7 +455,27 @@ header,
 }
 
 .wrapper {
-	top: 555px;
+	width: 1024px;
+	top: 535px;
+}
+
+.wrapper p {
+	padding: 30px 45px;
+	font-size: 18px;
+}
+
+.about {
+	margin: 0 25px;
+}
+
+.about-lips,
+.about-botox {
+	height: 310px;
+}
+
+.footer-main p {
+	font-size: 15px;
+	padding: 30px 0 0 100px;
 }
 
 }
@@ -456,12 +492,12 @@ header,
 }
 
 .wrapper {
-	top: 632px;
+	top: 612px;
 	width: 1200px;
 }
 
 .wrapper p {
-	padding: 30px 65px;
+	padding: 40px 65px;
 	font-size: 19px;
 }
 
@@ -476,6 +512,16 @@ header,
 
 .about h3 {
 	padding-top: 15px;
+}
+
+.about-lips,
+.about-botox {
+	height: 310px;
+}
+
+.footer-main p {
+	font-size: 15px;
+	padding: 30px 0 0 100px;
 }
 
 }
