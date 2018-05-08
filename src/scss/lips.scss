@@ -3,6 +3,11 @@ body{
   width: 100%;
   margin: 0 auto;
   background:rgba(253, 237, 239, 0.73);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+body h3{
+  font-weight: 400;
 }
 /*-----HEADER-----*/
 header{
@@ -52,55 +57,56 @@ a{
   position: absolute;
   top: 242px;
 }
-.about{
-  background:#fff;
-  box-shadow: 0px 4px 20px -10px #000000;
+.wrapper h3{
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  padding-bottom: 20px;
+}
+.main{
+  width: 320px;
+  margin: 0 auto;
+}
+.plastic{
+  // background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  margin: 10px;
+}
+.plastic h3{
+  background: white;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+.plastic p{
+  margin-top: 0px;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+.indications, .contraindications, .complications{
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(251, 251, 251, 0.37);
+  box-shadow: 0px 0px 18px -7px;
+}
+.indications table, .contraindications table, .complications table{
+  border-spacing: 5px;
+  margin: 0 auto;
+  background: rgba(251, 251, 251, 0.37);
+  width: 100%;
+}
+td, th{
+  background:rgba(251, 251, 251, 0.37);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  border-left: 1px solid rgba(0, 0, 0, 0.096);
+  padding: 3px;
+  text-align: left;
+  font-weight: 300;
+  transition: .2s ease-in-out;
+}
+th:hover{
+  background:rgba(255, 232, 232, 0.384);
 }
 
-.about h3{
-  text-align: center;
-  margin: 0;
-  padding: 10px 5px 10px 5px;
-}
-.wrapper p{
-  margin: 0;
-  font-size: 17px;
-  padding: 5px;
-}
-.lips, .botox{
-  margin-top: 40px;
-  padding: 5px 5px 10px 5px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(134, 134, 134, 0.27);
-}
-.lips-main, .botox-main{
-  position: relative;
-}
-.lips-main img, .botox img{
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 0px 9px -1px #000000;
-  transition: .3s ease-in-out;
-}
-.lips-main h3, .botox-main h3{
-  position: relative;
-  height: 25px;
-  width: 100%;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.58);
-  top: -40px;
-  margin: 0;
-  padding: 0;
-  font-size: 19px;
-}
-.lips-main img:hover, .botox-main img:hover{
-  filter: grayscale(25%) blur(1px);
-  box-shadow: 0px 0px 6px -1px #000000;
-}
-.about-lips, .about-botox{
-  background: rgba(255, 255, 255, 0.664);
-  box-shadow: 0px 4px 20px -10px #000000;
-}
+
 
 
 .footer{
@@ -269,21 +275,6 @@ svg#bg-1-3{
   .wrapper{
     top: 386px;
   }
-  .wrapper p{
-    padding: 10px 20px;
-  }
-  .wrapper-content{
-    display: flex;
-  }
-  .lips, .botox{
-    width: 50%;
-  }
-  .about-lips, .about-botox{
-    height: 310px;
-  }
-  .wrapper-content h4{
-    padding: 0 20px;
-  }
   .contacts{
     display: flex;
     flex-direction: row;
@@ -315,9 +306,6 @@ svg#bg-1-3{
   .wrapper{
     top: 442px;
   }
-  .about-lips, .about-botox{
-    height: 280px;
-  }
 }
 @media (min-width: 1024px){
   body{
@@ -329,16 +317,6 @@ svg#bg-1-3{
   .wrapper{
     width: 1024px;
     top: 535px;
-  }
-  .wrapper p{
-    padding: 30px 45px;
-    font-size: 18px;
-  }
-  .about{
-    margin: 0 25px;
-  }
-  .about-lips, .about-botox{
-    height: 310px;
   }
   .footer-main p{
     font-size: 15px;
@@ -355,23 +333,6 @@ svg#bg-1-3{
   .wrapper{
     top: 612px;
     width: 1200px;
-  }
-  .wrapper p{
-    padding: 40px 65px;
-    font-size: 19px;
-  }
-  .wrapper-content h4{
-    padding: 12px 65px;
-    font-size: 20px;
-  }
-  .about{
-    margin: 0 50px;
-  }
-  .about h3{
-    padding-top: 15px;
-  }
-  .about-lips, .about-botox{
-    height: 310px;
   }
   .footer-main p{
     font-size: 15px;

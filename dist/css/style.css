@@ -2,6 +2,8 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	background: rgba(253, 237, 239, 0.73);
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-weight: 300;
 }
 
 /*-----HEADER-----*/
@@ -74,10 +76,11 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: absolute;
-	top: 242px;
+	top: 222px;
 }
 
 .about {
+	margin: 0 15px;
 	background: #fff;
 	-webkit-box-shadow: 0px 4px 20px -10px #000000;
 	box-shadow: 0px 4px 20px -10px #000000;
@@ -92,7 +95,7 @@ a {
 .wrapper p {
 	margin: 0;
 	font-size: 17px;
-	padding: 5px;
+	padding: 10px;
 }
 
 .lips,
@@ -319,7 +322,7 @@ header,
 }
 
 .wrapper {
-	top: 260px;
+	top: 240px;
 }
 
 }
@@ -327,7 +330,7 @@ header,
 @media (min-width: 375px) {
 
 .wrapper {
-	top: 266px;
+	top: 226px;
 }
 
 }
@@ -340,7 +343,7 @@ header,
 }
 
 .wrapper {
-	top: 282px;
+	top: 252px;
 }
 
 .contacts a img {
@@ -362,11 +365,16 @@ header,
 }
 
 .wrapper {
-	top: 386px;
+	top: 346px;
 }
 
 .wrapper p {
 	padding: 10px 20px;
+}
+
+.about {
+	margin: 0 40px;
+	padding: 30px;
 }
 
 .wrapper-content {
@@ -441,6 +449,10 @@ header,
 	top: 442px;
 }
 
+.about {
+	padding: 80px;
+}
+
 .about-lips,
 .about-botox {
 	height: 280px;
@@ -467,6 +479,10 @@ header,
 .wrapper p {
 	padding: 30px 45px;
 	font-size: 18px;
+}
+
+.wrapper-content h4 {
+	padding: 10px 45px;
 }
 
 .about {
