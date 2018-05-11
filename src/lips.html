@@ -77,21 +77,54 @@
                 </div>
                 <div class="drugs">
                     <h3>Препараты которые мы используем</h3>
-                    <div class="Juvederm">
-                        <h4>Филлер для контурной пластики Ювидерм (Juvederm) </h4>
-                        <img src="" alt="">
-                        <div class="aboutJuvederm"></div>
-                        <div class="price"></div>
+                    <div class="drugsItem">
+                        <p>Мы используем препараты ведущих мировых компаний по производству 
+                            филлеров: Juvederm, Teosyal, Pluryal.
+                            Каждый из этих препаратов зарекомендовал себя как высококачественный
+                            продукт. <br>
+                            В зависимости от желания и потребности наших пациентов, мы 
+                            подбирам филлер индивидуально.
+                        </p>
+                        <div class="price">
+                            <table>
+                                <!-- <tr><th>Juvederm</th></tr> -->
+                                <tr><th>Juvederm Smile</th><th>0.55 мл</th><th> 4200 uah</th></tr>
+                                <tr><th>Juvederm Ultra 3</th><th>1 мл</th><th> 5900 uah</th></tr>
+                                <tr><th>Juvederm Volift retouch</th><th>0.55 мл</th><th> 5000 uah</th></tr>
+                                <tr><th>Juvederm Volift</th><th>1 мл</th><th> 7300 uah</th></tr>
+                            <!-- </table>
+                            <table> -->
+                                <!-- <tr><th>Teosyal</th></tr> -->
+                                <tr><th>Teosyal</th><th>1 мл</th><th> 6500 uah</th></tr>
+                            <!-- </table>
+                            <table> -->
+                                <!-- <tr><th>Pluryal</th></tr> -->
+                                <tr><th>Pluryal</th><th>1 мл</th><th> 4500 uah</th></tr>
+                                <tr><th>Pluryal Volume</th><th>1 мл</th><th> 5000 uah</th></tr>
+                            </table>
+                        </div>
                     </div>
-                    <div class="Teosyal">
-                        <img src="" alt="">
-                        <div class="aboutTeosyal"></div>
-                        <div class="price"></div>
-                    </div>
-                    <div class="Pluryal">
-                        <img src="" alt="">
-                        <div class="aboutPluryal"></div>
-                        <div class="price"></div>
+                </div>
+                <div class="callback">
+                    <h3>Обратная связь</h3>
+                    <p class="callbackInfo">Если у вас возникли вопросы, мы всегда готовы предоставить ответы.
+                        Наш доктор готов вам помочь.
+                    </p>
+                    <div class="callbackForm">
+                        <form class="form" action="php/telegram.php" method="POST" id="form">
+                            <p>
+                                <label for="" autocomplete="on">Имя: </label>
+                                <input placeholder="Имя" type="text" id="firstname" name="firstname"/>
+                            </p>
+                            <p>
+                                <label for="" autocomplete="on">Телефон: </label>
+                                <input placeholder="0123456789" type="text" id="tel" name="phone" autocomplete="on" required/>
+                            </p>
+                            <p>
+                                <label >Позвонить мне: </label>
+                                <button id="submit"  type="submit">Уже звоним</button>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -37,7 +37,89 @@
     </header>
     <body>
         <div class="wrapper">
-            
+            <div class="main">
+                <div class="botox">
+                    <h3>Ботулинотерапия</h3>
+                    <p>Методика ботулинотерапии применяется в эстетической медицине для 
+                        коррекции и предупреждения мимических морщин. Процедуры проводятся 
+                        путем введения в мягкие ткани специальных препаратов, в основе 
+                        которых – ботулотоксин (самые распространенные: «Ботокс», «Диспорт», 
+                        «Ксеомин», «Релатокс»). В результате этого происходит расслабление мышц, 
+                        то есть устраняется первопричина мимических морщин.</p>
+                </div>
+                <div class="aboutBotox">
+                    <div class="indications">
+                        <h3>Показания</h3>
+                        <table>
+                            <tr><th>Горизонтальные морщины лба</th></tr>
+                            <tr><th>Вертикальные морщины на переносице</th></tr>
+                            <tr><th>Морщины в области наружного угла глаз "гусиные лапки"</th> </tr>
+                            <tr> <th>«Кисетные» морщинки в область над верхней губой</th></tr>
+                            <tr> <th>Опущенные уголки рта</th></tr>
+                            <tr> <th>Поперечные морщины носа "кроличьи морщинки"</th></tк>
+                        </table>
+                    </div>
+                    <div class="contraindications">
+                        <h3>Противопоказания</h3>
+                        <table>
+                            <tr><th>Пластическая или иная хирургическая операция на лице</th></tr>
+                            <tr><th>Острая фаза инфекционных заболеваний, повышенная температура тела</th></tr>
+                            <tr><th>Гиперчувствительность (аллергия) к компонентам  препарата</th></tr>
+                            <tr><th>Беременность и кормление грудью</th></tr>
+                            <tr><th>Прием антибиотиков менее чем за 2 недели до процедуры</th></tr>
+                        </table>
+                    </div>
+                    <div class="complications">
+                        <h3>Возможные осложнения</h3>
+                        <p>После процедуры в местах уколов может быть небольшая отечность и в течение 
+                            нескольких дней могут сохраняться точечные кровоизлияния. Они проходят 
+                            самостоятельно и лечения не требуют.
+                        </p>
+                    </div>
+                </div>
+                <div class="drugs">
+                    <h3>Препараты которые мы используем</h3>
+                    <div class="drugsItem">
+                        <p>Мы используем препараты ведущих мировых компаний по производству 
+                            филлеров: Juvederm, Teosyal, Pluryal.
+                            Каждый из этих препаратов зарекомендовал себя как высококачественный
+                            продукт. <br>
+                            В зависимости от желания и потребности наших пациентов, мы 
+                            подбирам филлер индивидуально.
+                        </p>
+                        <div class="price">
+                            <table>
+                                <!-- <tr><th>Juvederm</th></tr> -->
+                                <tr><th>Juvederm Smile</th><th>0.55 мл</th><th> 4200 uah</th></tr>
+                                <tr><th>Juvederm Ultra 3</th><th>1 мл</th><th> 5900 uah</th></tr>
+                                <tr><th>Juvederm Volift retouch</th><th>0.55 мл</th><th> 5000 uah</th></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="callback">
+                    <h3>Обратная связь</h3>
+                    <p class="callbackInfo">Если у вас возникли вопросы, мы всегда готовы предоставить ответы.
+                        Наш доктор готов вам помочь.
+                    </p>
+                    <div class="callbackForm">
+                        <form class="form" action="php/telegram.php" method="POST" id="form">
+                            <p>
+                                <label for="" autocomplete="on">Имя: </label>
+                                <input placeholder="Имя" type="text" id="firstname" name="firstname"/>
+                            </p>
+                            <p>
+                                <label for="" autocomplete="on">Телефон: </label>
+                                <input placeholder="0123456789" type="text" id="tel" name="phone" autocomplete="on" required/>
+                            </p>
+                            <p>
+                                <label >Позвонить мне: </label>
+                                <button id="submit"  type="submit">Уже звоним</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="footer">
                 <div class="footer-main">
                     <div class="contacts">
@@ -56,6 +138,9 @@
             
                 </div>
             </div>
+        </div>
+        <div id="parallax-bg-4" class="parallax-bg">
+            <img src="img/botox-main.jpg" id="bg-3-1" alt="">
         </div>
         <div id="parallax-bg-3" class="parallax-bg">
             <svg id="bg-3-1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

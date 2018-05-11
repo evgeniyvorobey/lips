@@ -84,6 +84,7 @@ a {
 	background: #fff;
 	-webkit-box-shadow: 0px 4px 20px -10px #000000;
 	box-shadow: 0px 4px 20px -10px #000000;
+	padding: 10px 10px;
 }
 
 .about h3 {
@@ -95,7 +96,6 @@ a {
 .wrapper p {
 	margin: 0;
 	font-size: 17px;
-	padding: 10px;
 }
 
 .lips,
@@ -133,6 +133,7 @@ a {
 	margin: 0;
 	padding: 0;
 	font-size: 19px;
+	font-weight: 300;
 }
 
 .lips-main img:hover,
@@ -148,6 +149,20 @@ a {
 	background: rgba(255, 255, 255, 0.664);
 	-webkit-box-shadow: 0px 4px 20px -10px #000000;
 	box-shadow: 0px 4px 20px -10px #000000;
+	padding: 20px;
+}
+
+.about-lips h4,
+.about-botox h4 {
+	padding-bottom: 15px;
+	font-weight: 300;
+	font-size: 19px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.about-lips p,
+.about-botox p {
+	padding: 5px;
 }
 
 .footer {
@@ -455,7 +470,7 @@ header,
 
 .about-lips,
 .about-botox {
-	height: 280px;
+	height: 320px;
 }
 
 }
@@ -537,7 +552,7 @@ header,
 
 .about-lips,
 .about-botox {
-	height: 310px;
+	height: 340px;
 }
 
 .footer-main p {
