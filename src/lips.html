@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="application/ld+json">
+    {
+    "@context" : "http://schema.org",
+    "@type" : "LocalBusiness",
+    "name" : "Контурная пластика губ",
+    "image" : "http://drmarty.com.ua/img/lips.jpg",
+    "telephone" : "380971898985",
+    "address" : {
+        "@type" : "PostalAddress",
+        "streetAddress" : "г. Киев, пр-т Оболонский, 26",
+        "addressLocality" : "Киев",
+        "addressCountry" : "Украина"
+    },
+    "openingHoursSpecification" : {
+        "@type" : "OpeningHoursSpecification",
+        "dayOfWeek" : {
+        "@type" : "DayOfWeek",
+        "name" : "Пн-Вс"
+        }
+    },
+    "url" : "http://drmarty.com.ua/lips.html"
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/lips.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400" rel="stylesheet">
     <title>DrMarty</title>
     <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon">
 </head>
-<body>
+<body vocab = "http://schema.org/">
     <header>
         <div class="navigation" id="menu">
             <div class="header-section">
                 <div class="header-item">
                     <a href="index.html">Главная</a>
                 </div>
-                <div class="header-item">
-                    <a href="lips.html">Губы</a>
+                <div typeof = "Thing"class="header-item">
+                    <a property = "mainEntityOfPage"href="lips.html">Губы</a>
                 </div>
                 <div class="header-item">
-                    <a href="botox.html">Ботокс</a>
+                    <a  href="botox.html">Ботокс</a>
                 </div>
                 <div class="header-item">
-                    <a href="aboutus.html">О нас</a>
+                    <a href="aboutus.html">Обо мне</a>
                 </div>
             </div>
             <div class="header-section">
@@ -36,10 +60,10 @@
     </header>
     <body>
         <div class="wrapper">
-            <div class="main">
-                <div class="plastic">
-                    <h3>Контурная пластика губ</h3>
-                    <p>Губы – это самая красивая и привлекающая внимание часть женского лица. 
+            <main class="main">
+                <div typeof = "Thing" class="plastic">
+                    <h3 property = "name">Контурная пластика губ</h3>
+                    <p property = "mainEntityOfPage">Губы – это самая красивая и привлекающая внимание часть женского лица. 
                         Неудивительно, что практически все представительницы женского пола 
                         стараются подчеркнуть чувственность, свежесть, форму своих губ 
                         всеми доступными способами.
@@ -78,29 +102,22 @@
                 <div class="drugs">
                     <h3>Препараты которые мы используем</h3>
                     <div class="drugsItem">
-                        <p>Мы используем препараты ведущих мировых компаний по производству 
-                            филлеров: Juvederm, Teosyal, Pluryal.
+                        <p typeof = "Thing">Мы используем препараты ведущих мировых компаний по производству 
+                            филлеров: <span property = "name">Juvederm</span>, <span property = "name">Teosyal</span>, <span property = "name">Pluryal</span>.
                             Каждый из этих препаратов зарекомендовал себя как высококачественный
                             продукт. <br>
                             В зависимости от желания и потребности наших пациентов, мы 
                             подбирам филлер индивидуально.
                         </p>
                         <div class="price">
-                            <table>
-                                <!-- <tr><th>Juvederm</th></tr> -->
-                                <tr><th>Juvederm Smile</th><th>0.55 мл</th><th> 4200 uah</th></tr>
-                                <tr><th>Juvederm Ultra 3</th><th>1 мл</th><th> 5900 uah</th></tr>
-                                <tr><th>Juvederm Volift retouch</th><th>0.55 мл</th><th> 5000 uah</th></tr>
-                                <tr><th>Juvederm Volift</th><th>1 мл</th><th> 7300 uah</th></tr>
-                            <!-- </table>
-                            <table> -->
-                                <!-- <tr><th>Teosyal</th></tr> -->
-                                <tr><th>Teosyal</th><th>1 мл</th><th> 6500 uah</th></tr>
-                            <!-- </table>
-                            <table> -->
-                                <!-- <tr><th>Pluryal</th></tr> -->
-                                <tr><th>Pluryal</th><th>1 мл</th><th> 4500 uah</th></tr>
-                                <tr><th>Pluryal Volume</th><th>1 мл</th><th> 5000 uah</th></tr>
+                            <table typeof = "DrugCost">
+                                <tr><th property = "name">Juvederm Smile</th><th property = "drugUnit">0.55 мл</th><th property = "costOrigin"> 4200 uah</th></tr>
+                                <tr><th property = "name">Juvederm Ultra 3</th><th property = "drugUnit">1 мл</th><th property = "costOrigin"> 5900 uah</th></tr>
+                                <tr><th property = "name">Juvederm Volift retouch</th><th property = "drugUnit">0.55 мл</th><th property = "costOrigin"> 5000 uah</th></tr>
+                                <tr><th property = "name">Juvederm Volift</th><th property = "drugUnit">1 мл</th><th property = "costOrigin"> 7300 uah</th></tr>
+                                <tr><th property = "name">Teosyal</th><th property = "drugUnit">1 мл</th><th property = "costOrigin"> 6500 uah</th></tr>
+                                <tr><th property = "name">Pluryal</th><th property = "drugUnit">1 мл</th><th property = "costOrigin"> 4500 uah</th></tr>
+                                <tr><th property = "name">Pluryal Volume</th><th property = "drugUnit">1 мл</th><th property = "costOrigin"> 5000 uah</th></tr>
                             </table>
                         </div>
                     </div>
@@ -111,14 +128,14 @@
                         Наш доктор готов вам помочь.
                     </p>
                     <div class="callbackForm">
-                        <form class="form" action="php/telegram.php" method="POST" id="form">
+                        <form cclass="form" action="php/send.php" method="POST" id="form">
                             <p>
                                 <label for="" autocomplete="on">Имя: </label>
-                                <input placeholder="Имя" type="text" id="firstname" name="firstname"/>
+                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname"/>
                             </p>
                             <p>
                                 <label for="" autocomplete="on">Телефон: </label>
-                                <input placeholder="0123456789" type="text" id="tel" name="phone" autocomplete="on" required/>
+                                <input placeholder="Введите номер" type="text" id="tel" name="phone" autocomplete="on" required/>
                             </p>
                             <p>
                                 <label >Позвонить мне: </label>
@@ -127,12 +144,12 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </main>
             <div class="footer">
                 <div class="footer-main">
                     <div class="contacts">
                         <a href="https://goo.gl/maps/DanVFi3YyuT2">
-                            <img src="img/map.png" alt="">
+                            <img  src="img/map.png" alt="">
                         </a>
                         <div>
                             <p>Адрес:</p>
@@ -147,8 +164,8 @@
                 </div>
             </div>
         </div>
-        <div id="parallax-bg-4" class="parallax-bg">
-            <img src="img/lips.jpg" id="bg-3-1" alt="">
+        <div typeof = "ImageObject" id="parallax-bg-4" class="parallax-bg">
+            <img property = "image" src="img/lips.jpg" id="bg-3-1" alt="">
         </div>
         <div id="parallax-bg-3" class="parallax-bg">
             <svg id="bg-3-1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

@@ -10,14 +10,14 @@ $arr = array(
 );
 
 foreach($arr as $key => $value) {
-  $txt .= "<b>".$key."</b> ".$value."%0A";
+    $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
 if ($sendToTelegram) {
-  echo '<script type="text/javascript">alert("Заявка оформлена мы в скором времени свяжемся с вами!")</script>';
+    header ('Location: ../congratulation.html');
 } else {
-  echo '<script type="text/javascript">alert("Что то пошло не так попробуйте еще раз.")</script>';
+    echo 'Error';
 }
 ?>

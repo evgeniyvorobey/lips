@@ -27,7 +27,7 @@ gulp.task('js',function(){
 
 gulp.task('php', function(){
 	return gulp.src('./src/**/*.php')
-		.pipe(gulp.dest('./dist/php'))
+		.pipe(gulp.dest('./dist'))
 		.pipe(browserSync.reload({
 			stream: true
 			}));

@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="application/ld+json">
+    {
+    "@context" : "http://schema.org",
+    "@type" : "LocalBusiness",
+    "name" : "Ботулинотерапия",
+    "image" : "http://drmarty.com.ua/img/botox-main.jpg",
+    "telephone" : "+380971898985",
+    "address" : {
+        "@type" : "PostalAddress",
+        "streetAddress" : "г. Киев, пр-т Оболонский, 26",
+        "addressLocality" : "Киев",
+        "addressCountry" : "Украина"
+    },
+    "openingHoursSpecification" : {
+        "@type" : "OpeningHoursSpecification",
+        "dayOfWeek" : {
+        "@type" : "DayOfWeek",
+        "name" : "Пн-Пт"
+        }
+    },
+    "url" : "http://drmarty.com.ua/botox.html"
+    }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/botox.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400" rel="stylesheet">
     <title>DrMarty</title>
     <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon">
@@ -25,7 +48,7 @@
                     <a href="botox.html">Ботокс</a>
                 </div>
                 <div class="header-item">
-                    <a href="aboutus.html">О нас</a>
+                    <a href="aboutus.html">Обо мне</a>
                 </div>
             </div>
             <div class="header-section">
@@ -37,7 +60,7 @@
     </header>
     <body>
         <div class="wrapper">
-            <div class="main">
+            <main class="main">
                 <div class="botox">
                     <h3>Ботулинотерапия</h3>
                     <p>Методика ботулинотерапии применяется в эстетической медицине для 
@@ -77,24 +100,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="drugs">
+                <div vocab = "http://schema.org/" class="drugs">
                     <h3>Препараты которые мы используем</h3>
-                    <div class="drugsItem">
-                        <p>Ботулотоксин ипа А BOTOX - это препарат, который производится компанией ALLERGAN INC. 
+                    <div typeof = "Thing" class="drugsItem">
+                        <p><span property = "name">Ботулотоксин</span> ипа А <span property = "alternateName" >BOTOX</span> - это препарат, который производится компанией ALLERGAN INC. 
                             (США), завод расположен в г. Уэстпорт, Ирландия. <br>
                             Занимает лидирующие позиции и является наиболее изученным токсином, зарегистрирован 
                             в 80 странах мира. Впервые одобрен для клинического применения США в 1989г.
                         </p>
                         <div class="price">
-                            <table>
+                            <table typeof = "DrugCost">
                                 <tr><td>Ботулинотерапия по зонам:</td></tr>
-                                <tr><th>Лоб</th><th> 2300 uah</th></tr>
-                                <tr><th>Межбровье</th><th> 2300 uah</th></tr>
-                                <tr><th>Глаза "гусины лапки"</th><th> 2000 uah</th></tr>
+                                <tr><th property = "name" >Лоб</th><th property = "costOrigin" > 2300 uah</th></tr>
+                                <tr><th property = "name" >Межбровье</th><th property = "costOrigin" > 2300 uah</th></tr>
+                                <tr><th property = "name" >Глаза "гусины лапки"</th><th property = "costOrigin" > 2000 uah</th></tr>
                                 <tr><td>Лечение гипергидроза:</td></tr>
-                                <tr><th>Подмышечных впадин</th><th> 8000 uah</th></tr>
-                                <tr><th>Ступни</th><th> 8000 uah</th></tr>
-                                <tr><th>Ладони</th><th> 8000 uah</th></tr>
+                                <tr><th property = "name" >Подмышечных впадин</th><th property = "costOrigin" > 8000 uah</th></tr>
+                                <tr><th property = "name" >Ступни</th><th property = "costOrigin" > 8000 uah</th></tr>
+                                <tr><th property = "name" >Ладони</th><th property = "costOrigin" > 8000 uah</th></tr>
                             </table>
                         </div>
                     </div>
@@ -105,14 +128,14 @@
                         Наш доктор готов вам помочь.
                     </p>
                     <div class="callbackForm">
-                        <form class="form" action="php/telegram.php" method="POST" id="form">
+                        <form class="form" action="php/send.php" method="POST" id="form">
                             <p>
                                 <label for="" autocomplete="on">Имя: </label>
-                                <input placeholder="Имя" type="text" id="firstname" name="firstname"/>
+                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname"/>
                             </p>
                             <p>
                                 <label for="" autocomplete="on">Телефон: </label>
-                                <input placeholder="0123456789" type="text" id="tel" name="phone" autocomplete="on" required/>
+                                <input placeholder="Введите номер" type="text" id="tel" name="phone" autocomplete="on" required/>
                             </p>
                             <p>
                                 <label >Позвонить мне: </label>
@@ -121,7 +144,7 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </main>
             <div class="footer">
                 <div class="footer-main">
                     <div class="contacts">
