@@ -7,7 +7,7 @@ body {
 }
 
 body h3 {
-	font-weight: 400;
+	font-weight: 100;
 }
 
 /*-----HEADER-----*/
@@ -65,7 +65,7 @@ a {
 }
 
 .header-item:hover {
-	border-bottom: solid 2px #a0a0a0;
+	border-bottom: solid 2px rgba(80, 80, 80, 0.45);
 }
 
 .wrapper {
@@ -104,7 +104,7 @@ a {
 
 .plastic h3 {
 	background: white;
-	padding-top: 10px;
+	padding-top: 50px;
 	margin-bottom: 0px;
 }
 
@@ -119,7 +119,7 @@ a {
 .contraindications,
 .complications {
 	width: 95%;
-	margin: 0 auto;
+	margin: 50px auto;
 	background: rgba(251, 251, 251, 0.37);
 	-webkit-box-shadow: 0px 0px 18px -7px;
 	box-shadow: 0px 0px 18px -7px;
@@ -160,8 +160,48 @@ th:hover {
 	box-shadow: 0px 4px 20px -10px #000000;
 }
 
+.price {
+	padding: 10px 20px;
+}
+
 .price table {
 	width: 95%;
+}
+
+.cost {
+	width: 150px;
+}
+
+.work {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+	width: 290px;
+	overflow: hidden;
+	margin: 50px auto 0;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.sliderContainer {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	left: 0;
+	top: 0;
+	-webkit-transition: .7s all ease;
+	transition: .7s all ease;
+}
+
+.sliderContainer img {
+	width: 100%;
+	height: 100%;
 }
 
 .callback {
@@ -412,6 +452,10 @@ header,
 	top: 260px;
 }
 
+.slider {
+	width: 340px;
+}
+
 .main,
 .footer {
 	width: 360px;
@@ -441,6 +485,10 @@ header,
 
 .wrapper {
 	top: 282px;
+}
+
+.slider {
+	width: 390px;
 }
 
 .main,
@@ -531,7 +579,15 @@ header,
 }
 
 .wrapper {
-	top: 442px;
+	top: 492px;
+}
+
+.slider {
+	width: 720px;
+}
+
+.sliderContainer img {
+	width: 360px;
 }
 
 .main,
@@ -543,6 +599,21 @@ header,
 	background: #fff;
 	margin: 0 auto;
 	width: 80%;
+}
+
+.indications,
+.contraindications,
+.complications {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.aboutLips {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
 }
 
 }
@@ -561,6 +632,14 @@ header,
 .wrapper {
 	width: 1024px;
 	top: 565px;
+}
+
+.slider {
+	width: 970px;
+}
+
+.sliderContainer img {
+	width: 485px;
 }
 
 .main,
@@ -589,6 +668,14 @@ header,
 .wrapper {
 	top: 652px;
 	width: 1200px;
+}
+
+.slider {
+	width: 1140px;
+}
+
+.sliderContainer img {
+	width: 380px;
 }
 
 .main,
