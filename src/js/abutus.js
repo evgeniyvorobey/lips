@@ -23,7 +23,6 @@ jQuery(document).ready(function(){
 // ------------SLIDER------------
 autoSlider();
 let left = 0;
-let right = 0;
 let slider = document.getElementsByClassName('slider');
 let sliderWidth = slider[0].offsetWidth;
 let sliderContainer = document.getElementsByClassName('sliderContainer');
@@ -38,34 +37,47 @@ for (let i = 0; i < button.length; i++){
 
 function autoSlider() {
     timer = this.timer;
-    timer = setTimeout(function(){
+    if ( document.body.offsetWidth < 1024) {
+        timer = setTimeout(function(){
         left = left - sliderWidth;
-        right = right + sliderWidth;
-        width = sliderWidth * sliderContainer[0].childElementCount;
-        if (left < -(sliderWidth * (sliderContainer[0].childElementCount - 1))) {
-            left = 0;
-            clearTimeout(timer)
-        }
-        sliderContainer[0].style.left = left + "px";
-        sliderContainer[0].style.width = width + "px";
-        autoSlider();
-    },3500)
-}
-
-
-function clickLeft(){
-    if(left == -(sliderWidth * (sliderContainer[0].childElementCount - 1))) {
-        sliderContainer[0].style.left = 0 + "px";
+            width = sliderWidth * sliderContainer[0].childElementCount;
+            if (left < -(sliderWidth * (sliderContainer[0].childElementCount - 1))) {
+                left = 0;
+                clearTimeout(timer)
+            }
+            sliderContainer[0].style.left = left + "px";
+            sliderContainer[0].style.width = width + "px";
+            autoSlider();
+        },3500)
     } else {
-        sliderContainer[0].style.left = left + -sliderWidth + "px";
+        timer = setTimeout(function(){
+            left = left - sliderWidth;
+            width = sliderWidth * sliderContainer[0].childElementCount;
+            if (left < -(sliderWidth * (sliderContainer[0].childElementCount - 2))) {
+                left = 0;
+                clearTimeout(timer)
+            }
+            sliderContainer[0].style.left = (left / 2) + "px";
+            sliderContainer[0].style.width = (width / 2) + "px";
+            autoSlider();
+        },3500)
     }
 }
 
-function clickRight(){
-    if (left == 0) {
-        sliderContainer[0].style.left = -(sliderWidth * (sliderContainer[0].childElementCount - 1)) + "px";
-    } else {
-        sliderContainer[0].style.left = left + sliderWidth + "px";
-    }
 
-}
+// function clickLeft(){
+//     if(left == -(sliderWidth * (sliderContainer[0].childElementCount - 1))) {
+//         sliderContainer[0].style.left = 0 + "px";
+//     } else {
+//         sliderContainer[0].style.left = left + -sliderWidth + "px";
+//     }
+// }
+
+// function clickRight(){
+//     if (left == 0) {
+//         sliderContainer[0].style.left = -(sliderWidth * (sliderContainer[0].childElementCount - 1)) + "px";
+//     } else {
+//         sliderContainer[0].style.left = left + sliderWidth + "px";
+//     }
+
+// }

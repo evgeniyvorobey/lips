@@ -6,12 +6,16 @@ body {
 	font-weight: 300;
 }
 
+body h3 {
+	font-weight: 100;
+}
+
 /*-----HEADER-----*/
 
 header {
 	top: 25px;
 	margin: 0 auto;
-	width: 300px;
+	width: 310px;
 	z-index: 6;
 	position: relative;
 }
@@ -19,7 +23,7 @@ header {
 .navigation {
 	position: fixed;
 	z-index: 20;
-	width: 300px;
+	width: 310px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -51,12 +55,16 @@ a {
 
 .header-item {
 	height: 20px;
-	padding: 10px 7px;
+	padding: 10px 1px;
 	font-size: 14px;
 	margin-left: 5px;
 	border-bottom: solid 2px transparent;
 	-webkit-transition: .4s ease-in-out;
 	transition: .4s ease-in-out;
+}
+
+.header-item:nth-last-child(1) {
+	padding-right: 4px;
 }
 
 .header-item:hover {
@@ -84,7 +92,6 @@ a {
 	text-align: center;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.212);
 	padding-bottom: 20px;
-	font-weight: 400;
 }
 
 .main {
@@ -143,21 +150,6 @@ a {
 	height: 210px;
 }
 
-#left {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0);
-}
-
-#right {
-	position: absolute;
-	top: 0;
-	right: 0px;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0);
-}
-
 button {
 	border: 0px solid;
 	padding: 0;
@@ -179,7 +171,7 @@ button {
 	width: 100%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.418);
-	padding: 15px 0;
+	padding: 15px 0 0 0;
 }
 
 .footer-main {
@@ -191,6 +183,12 @@ button {
 
 .contacts a img {
 	width: 305px;
+}
+
+.devBlock {
+	margin: 0 auto;
+	font-size: 11px;
+	padding: 20px 0 0 0;
 }
 
 /*-------------------parallax--------------*/
@@ -379,6 +377,14 @@ header,
 	width: 395px;
 }
 
+.header-item {
+	padding: 10px 8px;
+}
+
+.header-item:nth-last-child(1) {
+	padding-right: 15px;
+}
+
 .wrapper {
 	top: 282px;
 }
@@ -546,12 +552,12 @@ header,
 
 .slider {
 	width: 1024px;
-	height: 700px;
+	height: 350px;
 }
 
 .sliderContainer img {
-	width: 1024px;
-	height: 700px;
+	width: 512px;
+	height: 350px;
 }
 
 .footer-main p {
@@ -589,12 +595,12 @@ header,
 
 .slider {
 	width: 1200px;
-	height: 740px;
+	height: 370px;
 }
 
 .sliderContainer img {
-	width: 1200px;
-	height: 740px;
+	width: 600px;
+	height: 370px;
 }
 
 .footer-main p {
