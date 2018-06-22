@@ -32,7 +32,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400" rel="stylesheet">
     <title>DrMarty</title>
-    <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/title.png" type="image/x-icon">
 </head>
 <body vocab = "http://schema.org/">
     <header>
@@ -62,7 +62,7 @@
         <div class="wrapper">
             <main class="main">
                 <div typeof = "Thing" class="plastic">
-                    <h3 property = "name">Контурная пластика губ</h3>
+                    <h1 property = "name">Контурная пластика губ</h1>
                     <p property = "mainEntityOfPage">Губы – это самая красивая и привлекающая внимание часть женского лица. 
                         Неудивительно, что практически все представительницы женского пола 
                         стараются подчеркнуть чувственность, свежесть, форму своих губ 
@@ -71,7 +71,9 @@
                 </div>
                 <div class="aboutLips">
                     <div class="indications">
-                        <h3>Показания</h3>
+                        <div class="indications__title">
+                            <h3>Показания</h3>
+                        </div>
                         <table>
                             <tr><th>Желание иметь пышные и сочные губы</th></tr>
                             <tr><th>Асиметрия врожденная или приобретенная</th></tr>
@@ -81,7 +83,9 @@
                         </table>
                     </div>
                     <div class="contraindications">
-                        <h3>Противопоказания</h3>
+                        <div class="contraindications__title">
+                            <h3>Противопоказания</h3>
+                        </div>
                         <table>
                             <tr><th>Беременность и период лактации</th></tr>
                             <tr><th>Герпетическая инфекция в активной фазе</th></tr>
@@ -90,7 +94,9 @@
                         </table>
                     </div>
                     <div class="complications">
-                        <h3>Возможные осложнения</h3>
+                        <div class="complications__title">
+                            <h3>Возможные осложнения</h3>
+                        </div>
                         <table>
                             <tr><th>Покраснение</th></tr>
                             <tr><th>Отек</th></tr>
@@ -112,7 +118,7 @@
                         </p>
                         <div class="price">
                             <table typeof = "DrugCost">
-                                <tr><th >Увеличение губ</th><th class="cost" property = "costOrigin">от 4200 uah</th></tr>
+                                <tr><th >Увеличение губ</th><th class="cost" property = "costOrigin">4200 uah</th></tr>
                             </table>
                         </div>
                     </div>
@@ -143,12 +149,12 @@
                     <div class="callbackForm">
                         <form cclass="form" action="php/send.php" method="POST" id="form">
                             <p>
-                                <label for="" autocomplete="on">Имя: </label>
-                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname"/>
+                                <label for="" >Имя: </label>
+                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname" autocomplete="on" required/>
                             </p>
                             <p>
-                                <label for="" autocomplete="on">Телефон: </label>
-                                <input placeholder="Введите номер" type="text" id="tel" name="phone" autocomplete="on" required/>
+                                <label for="" >Телефон: </label>
+                                <input placeholder="Введите номер" type="tel" id="tel" name="phone" autocomplete="on" required/>
                             </p>
                             <p>
                                 <label >Позвонить мне: </label>

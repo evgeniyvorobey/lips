@@ -6,21 +6,18 @@ body{
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 300;
 }
-body h3{
-  font-weight: 100;
-}
 /*-----HEADER-----*/
 header{
+  width: 100%;
   top: 25px;
   margin: 0 auto;
-  width: 310px;
   z-index: 6;
   position: relative;
 }
 .navigation{
+  width: 100%;
   position: fixed;
   z-index: 20;
-  width: 310px;
   display: flex;
   justify-content: space-between;
   background:rgba(255, 255, 255, 0.85);
@@ -39,11 +36,11 @@ a{
 }
 .header-item{
   height: 20px;
-  padding: 10px 1px;
+  padding: 10px 0px;
   font-size: 14px;
   margin-left: 5px;
   border-bottom: solid 2px transparent;
-  transition: .4s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .header-item:nth-last-child(1){
   padding-right: 4px
@@ -52,53 +49,55 @@ a{
   border-bottom: solid 2px rgba(80, 80, 80, 0.45);  
 }
 .wrapper{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   z-index: 5;
   box-sizing: border-box;
   position: absolute;
-  top: 242px;
-}
-.wrapper h3{
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
-  padding-bottom: 20px;
+  top: 222px;
 }
 .main{
-  width: 320px;
+  width: 90%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.418);
 }
 .plastic{
-  margin: 10px;
-  box-shadow: 0px -3px 10px -4px;
+  box-sizing: border-box;
+  background:#fff;
+  box-shadow: 0px 4px 20px -10px #000000;
+  padding: 30px;
 }
-.plastic h3{
-  background: white;
-  padding-top: 50px;
-  margin-bottom: 0px;
+.plastic h1{
+  text-align: center;
+  margin: 0;
+  padding: 10px 5px 10px 5px;
+  font-weight: 400;
 }
 .plastic p{
-  margin-top: 0px;
-  padding: 10px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  margin: 0;
+  font-size: 17px;
+}
+h3{
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 21px;
 }
 .indications, .contraindications, .complications{
-  width: 95%;
   margin: 50px auto;
-  background: rgba(251, 251, 251, 0.37);
-  box-shadow: 0px 0px 18px -7px;
   padding: 10px;
+}
+.indications__title, .contraindications__title, .complications__title{
+  height: 70px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
 .indications table, .contraindications table, .complications table{
   border-spacing: 5px;
   margin: 0 auto;
-  background: rgba(251, 251, 251, 0.37);
   width: 100%;
 }
 td, th{
-  background:rgba(251, 251, 251, 0.37);
   border-bottom: 1px solid rgba(0, 0, 0, 0.096);
   border-left: 1px solid rgba(0, 0, 0, 0.096);
   padding: 3px;
@@ -106,32 +105,21 @@ td, th{
   font-weight: 300;
   transition: .2s ease-in-out;
 }
-th:hover{
-  background:rgba(255, 232, 232, 0.384);
-}
 .drugs{
-  background: rgba(251, 251, 251, 0.37);
-  width: 95%;
+  background-color: #fff;
   margin: 15px auto;
   padding: 10px 10px 30px 10px;
-  box-shadow: 0px 4px 20px -10px #000000;
-}
-.price{
-  padding: 10px 20px;
+  box-shadow: 0px 0px 20px -10px #000000;
 }
 .price table{
-  width: 95%;
-}
-.cost{
-width: 150px;
+  width: 100%;
+  font-size: 18px;
 }
 
 //Slider
 
 .work{
-  padding-top: 30px;
-  background-color: rgba(251, 251, 251, 0.37);
-  width: 95%;
+  padding: 30px 0 100px;
   margin: 0 auto;
 }
 .slider{
@@ -160,19 +148,13 @@ width: 150px;
 
 
 .callback{
-  background: rgba(255, 255, 255, 0.44);
-  padding: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  background-color: #fff;
+  padding: 20px 20px 50px;
+  box-shadow: 0px 0px 20px -10px #000000;
 }
 .callbackInfo{
   text-align: center;
 
-}
-.callbackForm{
-  background: rgba(255, 255, 255, 0.44);
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0px 0px 20px -5px;
 }
 .callbackForm{
   margin: 0 auto;
@@ -194,22 +176,23 @@ margin: 10px 0;
 padding: 5px 10px;
 border-top: 1px solid rgba(0, 0, 0, 0.226);
 border-left: 1px solid rgba(0, 0, 0, 0.226);
-border-radius: 3px 0 0 0 ;
+border-radius: 2px 0 0 0 ;
 }
 .callbackForm input{
   font-weight: 300;
-  border-radius: 3px;
+  height: 28px;
+  border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.226);
 }
 .callbackForm button{
   width: 125px;
   height: 28px;
   border: 1px solid rgb(114, 114, 114);
-  border-radius: 5px;
+  border-radius: 2px;
   font-weight: 300;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
 .callbackForm button:hover{
   background: rgb(114, 114, 114);
@@ -225,6 +208,7 @@ border-radius: 3px 0 0 0 ;
   width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.418);
+  border-top: 1px solid rgba(128, 128, 128, 0.466);
   padding: 15px 0 0 0;
 }
 .footer-main{
@@ -356,78 +340,61 @@ svg#bg-1-3{
 }
 
 @media (min-width: 360px){
-  header, .navigation{
-    width: 340px;
-  }
   .wrapper{
-    top: 260px;
+    top: 240px;
   }
-  .slider{
-    width: 340px;
-  }
-  .main, .footer{
-    width: 360px;
+  .header-item{
+    margin: 0 7px;
   }
 }
 @media (min-width: 375px){
   .wrapper{
-    top: 266px;
-  }
-  .main, .footer{
-    width: 375px;
+    top: 226px;
   }
 }
 @media (min-width: 411px){
-  header, .navigation{
-    width: 395px;
-  }
   .header-item{
-    padding: 10px 8px;
-  }
-  .header-item:nth-last-child(1){
-    padding-right: 15px
-  }
-  .wrapper{
-    top: 282px;
-  }
-  .slider{
-    width: 390px;
-  }
-  .main, .footer{
-    width: 411px;
-  }
-  .contacts a img{
-    width: 385px;
-  }
-  .plastic p{
-    padding: 40px;
-  }
-}
-@media(min-width: 640px){
-  header, .navigation{
-    width: 620px;
-  }
-  .header-item{
-    padding: 10px 30px;
+    margin: 0px 8px;
     font-size: 15px;
   }
   .wrapper{
-    top: 386px;
+    top: 252px;
+  }
+  .plastic h1{
+    padding: 30px 0;
+  }
+  .slider{
+    width: 370px;
+  }
+  .contacts a img{
+    width: 370px;
+  }
+}
+@media(min-width: 640px){
+  .header-item{
+    margin: 0px 20px;
+    font-size: 16px;
+  }
+  .wrapper{
+    top: 346px;
   }
   .wrapper p{
     padding: 10px 20px;
   }
-
-  .main, .footer{
-    width: 640px;
+  .plastic{
+    padding: 70px 30px;
+  }
+  .price{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slider{
+    width: 570px;
   }
   .contacts{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
-  .plastic p{
-    padding: 70px;
   }
   svg#bg-1-3{
     left: 47%;
@@ -449,32 +416,24 @@ svg#bg-1-3{
 }
 
 @media (min-width: 768px){
-  header, .navigation{
-    width: 745px;
-  }
   .wrapper{
-    top: 492px;
+    top: 412px;
   }
-  .slider{
-    width: 720px;
-  }
-  .sliderContainer img{
-    width: 360px;
-  }
-  .main, .footer{
-    width: 768px;
+  .header-item{
+    margin: 0px 30px;
+    font-size: 18px;
   }
   .plastic{
-    background:  #fff;
-    margin:  0 auto;
-    width: 80%;
+    padding: 80px;
   }
-  .indications, .contraindications, .complications{
-    box-shadow: none;
+  .slider{
+    width: 690px;
+  }
+  .sliderContainer img{
+    width: 345px;
   }
   .aboutLips{
     display: flex;
-    width: 95%;
     margin: 0 auto;
   }
 }
@@ -483,19 +442,23 @@ svg#bg-1-3{
     width: 1024px;
   }
   header, .navigation{
-    width: 950px;
+    width: 1024px;
   }
   .wrapper{
     width: 1024px;
-    top: 565px;
+    top: 535px;
+  }
+  .wrapper p{
+    padding: 30px 45px;
+    font-size: 18px;
   }
   .slider{
-    width: 970px;
+    width: 920px;
   }
   .sliderContainer img{
-    width: 485px;
+    width: 460px;
   }
-  .main, .footer{
+  .footer{
     width: 1024px;
   }
   .footer-main p{
@@ -508,23 +471,27 @@ svg#bg-1-3{
     width: 1200px;
   }
   header, .navigation{
-    width: 1000px;
+    width: 1200px;
   }
   .wrapper{
-    top: 652px;
+    top: 612px;
     width: 1200px;
+  }
+  .wrapper p{
+    padding: 40px 65px;
+    font-size: 19px;
   }
   .slider{
-    width: 1140px;
+    width: 1080px;
   }
   .sliderContainer img{
-    width: 380px;
+    width: 360px;
   }
-  .main, .footer{
+  .footer{
     width: 1200px;
   }
-  .plastic p{
-    padding: 90px;
+  .plastic h1{
+    padding-top: 15px;
   }
   .footer-main p{
     font-size: 15px;

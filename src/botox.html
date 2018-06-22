@@ -32,7 +32,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400" rel="stylesheet">
     <title>DrMarty</title>
-    <link rel="shortcut icon" href="img/title.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/title.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -62,7 +62,7 @@
         <div class="wrapper">
             <main class="main">
                 <div class="botox">
-                    <h3>Ботулинотерапия</h3>
+                    <h1>Ботулинотерапия</h1>
                     <p>Методика ботулинотерапии применяется в эстетической медицине для 
                         коррекции и предупреждения мимических морщин. Процедуры проводятся 
                         путем введения в мягкие ткани специальных препаратов, в основе 
@@ -71,7 +71,9 @@
                 </div>
                 <div class="aboutBotox">
                     <div class="indications">
-                        <h3>Показания</h3>
+                        <div class="indications__title">
+                            <h3>Показания</h3>
+                        </div>
                         <table>
                             <tr><th>Горизонтальные морщины лба</th></tr>
                             <tr><th>Вертикальные морщины на переносице</th></tr>
@@ -82,7 +84,9 @@
                         </table>
                     </div>
                     <div class="contraindications">
-                        <h3>Противопоказания</h3>
+                        <div class="contraindications__title">
+                            <h3>Противопоказания</h3>
+                        </div>
                         <table>
                             <tr><th>Пластическая или иная хирургическая операция на лице</th></tr>
                             <tr><th>Острая фаза инфекционных заболеваний, повышенная температура тела</th></tr>
@@ -92,17 +96,19 @@
                         </table>
                     </div>
                     <div class="complications">
-                        <h3>Возможные осложнения</h3>
-                        <p>После процедуры в местах уколов может быть небольшая отечность и в течение 
-                            нескольких дней могут сохраняться точечные кровоизлияния. Они проходят 
-                            самостоятельно и лечения не требуют.
-                        </p>
+                        <div class="complications__title">
+                            <h3>Возможные осложнения</h3>
+                        </div>
+                        <table>
+                            <tr><th>Небольшая отечность в течение нескольких дней</th></tr>
+                            <tr><th>Могут сохраняться точечные кровоизлияния</th></tr>
+                        </table>
                     </div>
                 </div>
                 <div vocab = "http://schema.org/" class="drugs">
                     <h3>Препараты которые мы используем</h3>
                     <div typeof = "Thing" class="drugsItem">
-                        <p><span property = "name">Ботулотоксин</span> ипа А - это препарат, который занимает лидирующие позиции и является наиболее изученным токсином, зарегистрирован 
+                        <p><span property = "name">Ботулотоксин</span> типа А - это препарат, который занимает лидирующие позиции и является наиболее изученным токсином, зарегистрирован 
                             в 80 странах мира. Впервые одобрен для клинического применения США в 1989г.
                         </p>
                         <div class="price">
@@ -110,7 +116,7 @@
                                 <tr><td>Ботулинотерапия по зонам:</td></tr>
                                 <tr><th property = "name" >Лоб</th><th property = "costOrigin" > 2300 uah</th></tr>
                                 <tr><th property = "name" >Межбровье</th><th property = "costOrigin" > 2300 uah</th></tr>
-                                <tr><th property = "name" >Глаза "гусины лапки"</th><th property = "costOrigin" > 2000 uah</th></tr>
+                                <tr><th property = "name" >Глаза "гусиные лапки"</th><th property = "costOrigin" > 2000 uah</th></tr>
                                 <tr><td>Лечение гипергидроза:</td></tr>
                                 <tr><th property = "name" >Подмышечных впадин</th><th property = "costOrigin" > 8000 uah</th></tr>
                                 <tr><th property = "name" >Ступни</th><th property = "costOrigin" > 8000 uah</th></tr>
@@ -140,12 +146,12 @@
                     <div class="callbackForm">
                         <form class="form" action="php/send.php" method="POST" id="form">
                             <p>
-                                <label for="" autocomplete="on">Имя: </label>
-                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname"/>
+                                <label for="">Имя: </label>
+                                <input placeholder="Введите имя" type="text" id="firstname" name="firstname" autocomplete="on" required/>
                             </p>
                             <p>
-                                <label for="" autocomplete="on">Телефон: </label>
-                                <input placeholder="Введите номер" type="text" id="tel" name="phone" autocomplete="on" required/>
+                                <label for="">Телефон: </label>
+                                <input placeholder="Введите номер" type="tel" id="tel" name="phone" autocomplete="on" required/>
                             </p>
                             <p>
                                 <label >Позвонить мне: </label>
